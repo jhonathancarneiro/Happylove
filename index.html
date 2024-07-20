@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <title>Feliz Aniversario 🎉</title>
+</head>
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+
+<body class="bg-gray-100">
+
+    <header class="bg-purple-400 text-white p-4 fixed w-full top-0 shadow-md">
+        <h1 class="text-center text-xl font-bold">Feliz Aniversário minha amada ❤️ </h1>
+    </header>
+
+    <section class="mts-16 text-center p-4">
+        <img src="fotos/capa1.webp" alt="Foto de Capa" class="w-full h-auto rounded-lg shadow-md">
+        <div class="mt-4">
+            <h2 class="text-2xl font-bold">Feliz Aniversário, Amor!</h2>
+            <p class="text-gray-600">Parabéns, meu amor, muito feliz por mais um aniversário ao seu lado, sou grato por
+                poder compartilhar momentos com você. Que eu possa tornar seu dia incrível e que eu possa ter a
+                companhia do seu lindo sorriso por inúmeros anos, cada vez mais e mais.</p>
+        </div>
+    </section>
+
+    <section class="p-4">
+        <h3 class="text-xl font-bold mb-4">Parabens a mãe do ano.</h3>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="fotos/2.webp" alt="Foto 1" class="w-full h-auto rounded-lg shadow-md">
+            <img src="fotos/3.webp" alt="Foto 2" class="w-full h-auto rounded-lg shadow-md">
+            <!-- mais fotos -->
+        </div>
+        <p class="mt-2">Parabéns à melhor mãe do ano, pelo terceiro ano educativo, e seguirá invicta por muitos anos.
+            Você é incrível
+            e alegra nossos dias, nós te amamos em cada detalhe, você traz calmaria.
+            Sou grato por construir esta família com você e criar tantos momentos incríveis.
+        </p>
+    </section>
+    <div class="flex justify-center items-center w-full">
+        <div class="flex justify-center items-center space-x-1 overflow-hidden w-full">
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+            <span class="text-red-500 text-xl">❤️</span>
+
+        </div>
+    </div>
+
+    <section class="mt-2 p-4">
+        <img src="fotos/4.webp" alt="Foto de Capa" class="w-full h-auto rounded-lg shadow-md">
+        <div class="mt-4 text-center">
+            <h2 class="text-2xl font-bold">A Mulher mais incrivel.</h2>
+            <p class="text-gray-600">Amor da minha vida, minha amiga, minha princesa...</p>
+            <p>Você é a melhor escolha que eu poderia ter sonhado, cada momento ao seu lado me traz felicidade.
+                O sorriso me alegra, sua presença me traz paz, sou imensamente realizado por construir uma família com
+                você.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="overflow-hidden bg-black h-20 flex items-center">
+            <p class="animate-scroll whitespace-nowrap text-white text-2xl px-4 py-2"
+                style="animation: scroll 10s linear infinite;">
+                🎂 Vamos fazer o seu dia especial meu amor 🎂
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        });
+    </script>
+
+</body>
+
+
+
+
+
+</html>
